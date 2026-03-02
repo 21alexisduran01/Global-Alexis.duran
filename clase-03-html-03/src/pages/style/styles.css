@@ -1,0 +1,39 @@
+ /* SELECTOR UNIVERSAL */  
+/* *  {
+color: maroon;
+} */
+
+ /* SELECTOR DE ETIQUETA */ 
+/*  p{
+  color: red;/
+}  */
+
+/*  SELECTOR DE CLASE */ 
+/* .Uno
+{
+    color: green;
+}
+.DOS {
+    color: blue; 
+} 
+ /* SELECTOR DE ID */
+/*  #ESunico {
+    color: yellow;
+}  
+  */
+
+/* SELECTORES COMBINADOS */
+/* h2{
+color: blue;
+} */
+
+/* SELECTOR DE HIJO */
+/* 
+section > h2 { 
+    color: purple;
+}
+*/
+section > article > h2 { 
+    color: red;
+}
+/* SELECTOR DE HIJO */
