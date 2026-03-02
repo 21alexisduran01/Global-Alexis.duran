@@ -1,39 +1,86 @@
- /* SELECTOR UNIVERSAL */  
-/* *  {
+ /* SELECTOR UNIVERSAL */
+ /* *  {
 color: maroon;
 } */
 
- /* SELECTOR DE ETIQUETA */ 
-/*  p{
-  color: red;/
-}  */
+ /* SELECTOR DE ETIQUETA */
+ p {
+     color: red;
+ }
 
-/*  SELECTOR DE CLASE */ 
-/* .Uno
-{
-    color: green;
-}
-.DOS {
-    color: blue; 
-} 
+ /*  SELECTOR DE CLASE */
+ .Uno {
+     color: green;
+ }
+
+ .DOS {
+     color: blue;
+ }
+
+ .negro {
+     color: rgba(30, 255, 244, 0.765);
+     font-family: 'Courier New', Courier, monospace;
+     background-color: rgba(0, 0, 0, 0.311);
+     min-width: 10px;
+     padding: 10px;
+ }
+
  /* SELECTOR DE ID */
-/*  #ESunico {
-    color: yellow;
-}  
-  */
+ #ESunico {
+     color: lightskyblue
+ }
 
-/* SELECTORES COMBINADOS */
-/* h2{
-color: blue;
-} */
 
-/* SELECTOR DE HIJO */
-/* 
-section > h2 { 
-    color: purple;
+ /* SELECTORES COMBINADOS */
+ h2 {
+     color: red;
+ }
+
+ /* SELECTOR DE HIJO */
+
+ section>h2 {
+     color: purple;
+ }
+
+ /* SELECTOR DECENDIENTE*/
+
+ section h2 {
+     color: red;
+ }
+
+ /* SELECTOR DE HERMANO */
+ h2~P {
+     color: orange;
+ }
+
+ /* SELECTOR DE HERMANO ADYACENTE */
+ h2+P {
+     color: brown;
+ }
+
+ /* SELECTOR DE ATRIBUTO */
+ input[class="pepe"] {
+     color: red;
+ }
+
+ /* Para investigar selector de columnas */
+
+
+ /*    El selector de columna || es un combinador estructural de CSS que permite seleccionar elementos (normalmente <td> o <th>) que pertenecen a una columna específica dentro de una tabla.
+
+Su función es aplicar estilos a las celdas asociadas a un elemento <col> definido previamente en la estructura HTML.
+
+En otras palabras:
+
+|| conecta una columna definida con <col> con las celdas que forman parte de esa columna. */
+
+ /* Ejemplo de columna ||  A continuacion con un ejemplo en HTML */
+
+ /* Estilo para TODAS las celdas de la columna edad */
+col.edad {
+    background-color: lightblue;
 }
-*/
-section > article > h2 { 
-    color: red;
+td.edad, th.edad {
+    background-color: lightblue;
+    font-weight: bold;
 }
-/* SELECTOR DE HIJO */
