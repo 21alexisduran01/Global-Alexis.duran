@@ -1,0 +1,209 @@
+/* 
+    POSITIONING 
+Generar un sistema de tridimensionalidad.
+absoluto (absolute)--> ubica el elmento relativo a los margenes del navegador
+relativo (relative) ubica ele elmento ralativo a los margenes de su contenedor padre
+fijado (fixed) tambien lo hace relativo viewport pero este queda fijado en esa posicion.
+
+*/
+
+ .box1 {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 3;
+} 
+
+ .hijo {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+   position: relative;
+   top: 50px;
+   left: 50px;
+}
+ 
+ .box2 {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    z-index: 3;
+}
+
+ .box3{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+z-index: 1;
+}  
+
+
+* {margin: 0;}
+
+nav {
+    background-color: purple;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+
+.UNO {
+    background-color: lightblue;
+    height: 100vh;
+}
+
+
+.DOS {
+    background-color: orange;
+    height: 100vh;
+}
+/* 
+PSEUDOS CLASES --> HOVER( HOLD OVER) 
+Transform 
+transitions */
+
+img {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+
+.Twitter {
+    left: 110px;
+    bottom: 50px;
+    position: fixed;
+    cursor: cell;
+}
+
+.Twitter :hover {
+    transform:skew(-36);
+    transition: 1.5s;
+}
+
+
+
+.TikTok {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 50px;
+    left:200PX ;
+    cursor: w-resize;
+}
+
+
+.TikTok:hover {
+    transform:scale(-10);
+    transition: 10s;
+}
+
+.Whatsapp {
+    left: 310px;
+    bottom: 50px;
+    position: fixed;
+    cursor: move;
+}
+
+.Whatsapp:hover {
+    transform: matrix3d(2.5, 1.5, 0.5, 0, 0.5, 2, 3, 0, 0, 0.5, 1, 0, 0, 0, 2, 1);
+    transition: 2.5s;
+}
+
+.Instagram {
+    position: absolute;
+    left: 410px;
+    bottom: 50px
+}
+
+.Instagram:hover {
+    transform: scale(5);
+    transition: 3.5s;
+ }
+
+
+.Messenger {
+    left: 520px;
+    bottom: 50px;
+    position: fixed;
+    cursor: zoom-out;
+}
+
+.Messenger:hover {
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+
+.Pinterest {
+    left: 625px;
+    bottom: 50px;
+    position: fixed;
+    cursor:crosshair;
+}
+.Pinterest:hover {
+    transform: translateY(-100px);
+    transition: 1s;
+}
+
+.Snapchat {
+    left: 730px;
+    bottom: 50px;
+    position: fixed;
+    cursor: ne-resize;
+}
+
+.Snapchat:hover {
+    transform: translateX(100px);
+    transition: 0.5s;
+}
+
+.YouTube {
+    left: 840px;
+    bottom: 50px;
+    position: absolute;
+    cursor: progress;
+}
+
+.YouTube:hover {
+    transform: rotate(10800deg);
+    transition: 1s;
+    height: 400px;
+    width: 400px;
+    /* Profesor a es logo lo deje asi aproposito jajajaj, me parecio interesante que cuando jira tambien se mueven la pantalla XD */
+}
+
+.MercadoPago {
+    right: 200px;
+    bottom: 50px;
+    position: fixed;
+    cursor: vertical-text;
+}
+
+.MercadoPago:hover {
+    transform: skew(12deg);
+   width: 150px;
+   height: 150px;
+}
+p {color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}

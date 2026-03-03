@@ -1,0 +1,38 @@
+/* 
+
+FONDOS
+
+    nos interesa colocar una imagen de fondo en nuestro sitio web, para eso tenemos la propiedad background-image, a la cual le 
+    asignamos la ruta de la imagen que queremos colocar como fondo.
+
+    background-image: url(miimagen.jpg);
+
+    Modificar el tamaño de la imagen  ---> background-size
+    mover la imagen  - - - - - - -- -----> background-position
+    generar o remover mozaico con - - ---> background-repeat
+*/
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-image: url(https://viejodave.com.ar/wp-content/uploads/2024/02/hamburguesa-cheddar-panceta-cebolla-caramelizada-pepinillo-y-morron-carne-doble-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.filtro{
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container p{
+    font-size: 5rem;
+    color: white;
+}

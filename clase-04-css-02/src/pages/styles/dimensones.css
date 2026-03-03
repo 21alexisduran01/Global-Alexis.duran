@@ -1,0 +1,84 @@
+/* Dimensiones
+
+EN CSS disponesmos de diferentes medidas para establecer anchos yaltos 
+a nuestros elementos.
+-> ABSOLUTAS -> Tienen valor por si mismas 
+
+-> INCHES
+-> PIXELS 
+
+
+-> RELATIVAS -> Dependen de otra medida para tener valor
+-> PORCENTAJES : 50% 
+-> VIEWPORT : 50vh viewport height / 50vw viewport width 
+-> REM
+-> EM
+
+
+*/
+/* * {margin: 0;}
+.container {
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+     
+} */
+    
+/* section{
+    background-color: rgb(0, 64, 255);
+    width: 100%;
+    height: 100vh;
+     
+} */
+/* .hijo {
+    background-color: rgb(0, 255, 132);
+    height: 50%;
+    width: 50%;
+     
+} */
+/* .text_container {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 26);
+    display: block;
+}
+ */
+/********** REM **********/
+html {
+    font-size: 12px;/* 1rem = 16px */
+}
+h1 {
+    font-size: 2rem; /* 32px */
+}
+h2 {
+    font-size: 1.75rem; /* 28px */
+}
+h3 {
+    font-size: 1.5rem; /* 24px */
+}
+h4 {
+    font-size: 1.25rem; /* 20px */  
+}
+h5 {
+    font-size: 1rem; /* 16px */
+}
+
+.rebelde {
+    font-size: 20px /* 1em = 20px  */
+} 
+.rebelde h1 {
+    font-size: 2em /* 1em = 20px  */
+}
+.rebelde h2 {
+    font-size: 1.75em /* 1em = 20px  */
+}
+.rebelde h3{
+    font-size: 1.5em /* 1em = 20px  */
+}
+.rebelde h4  {
+    font-size: 1.25em /* 1em = 20px  */
+}
+
+
+
+
