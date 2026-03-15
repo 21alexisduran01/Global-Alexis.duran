@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta theme-color="" content="#4b9a54">
+    <title>Contactos</title>
+</head>
+
+<body>
+
+</body>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicio.html">Servicios</a></li>
+        <li><a href="Contactos.html">Contacto</a></li>
+    </ul>
+</nav>
+<header>
+    <main>
+        <h1>Contactos</h1>
+            <fieldset><!-- Agregue esto por hace uno dias atras lo vi en un formulario que llene y me dio curiosidad de saber com ese hacia 
+    asique lo investigue y bueno lo puse para saber como quedaba no mas XD  -->
+
+
+
+                <form action="https://formsubmit.co/ale21.duran01@gmail.com" method="POST">
+                    <input type="text" name="Nombre" placeholder="Nombre" maxlength="50" required><br>
+                    <input type="email" name="email" required placeholder="Correo"><br>
+                    <input type="password" name="password" autocomplete="new-password" minlength="8" required
+                        placeholder="Contraseña">
+                </form>
+                <br>
+                <input type="date" name="fecha" placeholder="Fecha de nacimiento"><br>
+                <input type="time" name="hora" placeholder="Hora"> <br>
+                <label for="file">Selecione un archivo</label>
+                <input type="file" name="file-upload" id="file"><br>
+                <input type="number" name="numero" placeholder="Numero"><br>
+                <input type="search" name="buscar" placeholder="Buscar"><br>
+
+                <label><input type="checkbox" name="opciones" value="opcion1"> Opción 1</label>
+                <label><input type="checkbox" name="opciones" value="opcion2"> Opción 2</label>
+                <label><input type="checkbox" name="opciones" value="opcion3"> Opción 3</label>
+                <label><input type="checkbox" name="opciones" value="opcion4"> Opción 4</label>
+                <br>
+
+                <label for="genero">Genero</label><br>
+
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="otro" name="genero" value="otro">
+                <label for="otro">Otro</label> <br>
+
+                <label for="faccion">Selecciona una Facción</label>
+                <select id="faccion" name="faccion">
+                    <option value="">Seleciona una Facción</option>
+                    <option value="Humano">humano</option>
+                    <option value="elfo">elfo</option>
+                    <option value="enano">enano</option>
+                    <option value="orco">orco</option>
+                </select>
+                <br>
+                <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea> <br>
+
+
+                <label for="color">Seleccione un color</label>
+                <input type="Color" id="color"><br>
+                <label for="url">Direccion URL</label>
+                <input type="url"  id="url" placeholder="Introduce un URL Valido"><br>
+                <label for="tel">Numero de telefono</label>
+                <input type="tel" placeholder="Numero de telefono"><br>
+                <label for="datetiem">Fehcha y hota</label>
+                <input type="datetime" placeholder="Fecha y hora"><br>
+            
+                <label for="language">Selecciona un lenguaje</label>
+                <select id="language">
+                    <option value="HTML">Selecciona un Languje</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="React">React</option>
+                </select>
+                <br>
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+        
+
+
+
+    </main>
+</header>
+
+</html>

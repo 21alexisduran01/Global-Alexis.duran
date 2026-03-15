@@ -32,9 +32,9 @@ color: maroon;
 
 
  /* SELECTORES COMBINADOS */
- h2 {
+/*  h2 {
      color: red;
- }
+ } */
 
  /* SELECTOR DE HIJO */
 
@@ -77,9 +77,8 @@ En otras palabras:
  /* Ejemplo de columna ||  A continuacion con un ejemplo en HTML */
 
  /* Estilo para TODAS las celdas de la columna edad */
-col.edad {
-    background-color: lightblue;
-}
+
+
 td.edad, th.edad {
     background-color: lightblue;
     font-weight: bold;

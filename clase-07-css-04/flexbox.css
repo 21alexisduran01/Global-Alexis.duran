@@ -1,0 +1,129 @@
+/* 
+    FLEXBOX
+
+    Sistema de distribucion de elementos dentro de un contenedor. 
+
+    Se declara al contenedor padre como flexible y eso habilita un paquete de propiedades que permiten
+    distribuir sus elementos hijos a gusto.
+
+    "flex" es un valor de propiedad "display"
+    "flex-direction" elegir el eje cartesiano en el que se van a alinear los elementos hijos.
+    "justify-content" elegir como queremos que se distribuyan los elementos en el eje X
+    "align-items" elegir como queremos que se distribuyan los elementos en el eje Y
+*/
+
+/* .container {
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.uno {
+    align-self: start;
+}
+
+.tres {
+    align-self: end;
+} */
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+
+/* Tarea de investigación 
+flex-grow
+flex-shrink
+flex-basis
+ 
+
+bien flex-grow sirve para indicar cuanto puede crecer un elemento dentro del contenedor cuando hay espacion diponible 
+por ejemplo si un elemento tiene flex-grow:1 y otro flex-grow: 2, el segundo va a ocupar el doble de espacion que el primerio 
+
+despues esta flex-shrink, que indica cuánto puede encogerse un elemento cuando no hay suficiente espacio en el contenedor 
+por defecto ele valor es 1, lo que significa que ele elemento  puede reducir su tamaño. si ponemos flex-shrink:0 el elemento no se va a encoger.
+
+y flex-basis define el tamaño inicial del elemento antes de que el espacio se distribuya 
+por ejemplo si usamos flex-basis: 200px, el elemento va a empezar con un tamaño de 200px, y luego puede crecer o reducirse dependiendo del espacio disponible 
+
+
+
+
+CSS de ejemplo de flex-grow  */
+
+.container {
+    display: flex;
+}
+
+.box {
+    background: lightblue;
+    border: 1px solid black;
+}
+
+.box1 {
+    flex-grow: 1;
+}
+
+.box2 {
+    flex-grow: 2;
+}
+
+
+
+CSS de ejemplo de flex-shrink .container {
+    display: flex;
+    width: 200px;
+}
+
+.box {
+    width: 150px;
+    border: 1px solid black;
+}
+
+.caja1 {
+    flex-shrink: 1;
+}
+
+.caja2 {
+    flex-shrink: 0;
+}
+
+
+CSS de flex-basis .container {
+    display: flex;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.cuadro1 {
+    flex-basis: 200px;
+}
+
+.cuadro2 {
+    flex-basis: 400px;
+}
